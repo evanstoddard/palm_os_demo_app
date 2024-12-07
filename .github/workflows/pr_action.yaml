@@ -12,5 +12,5 @@ jobs:
       image: evanstoddard/palm_toolchain
     steps:
       - uses: actions/checkout@v4
-      - run: export PATH=${PATH}:/opt/palm_gnu_tools/bin
+      - run: /opt/palm_gnu_tools/bin >> $GITHUB_PATH
       - run: make
