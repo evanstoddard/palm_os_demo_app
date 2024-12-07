@@ -1,0 +1,15 @@
+name: PR
+on:
+  [pull_request]
+jobs:
+  build:
+    permissions: 
+      pull-requests: write 
+      repository-projects: read
+      contents: read
+    runs-on: ubuntu-latest
+    container:
+      image: evanstoddard/palm_toolchain
+    steps:
+      - uses: actions/checkout@v4
+      - run: make

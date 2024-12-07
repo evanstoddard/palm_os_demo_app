@@ -10,7 +10,6 @@ UInt32 PilotMain( UInt16 cmd, void *cmdPBP, UInt16 launchFlags )
 {
     EventType event;
 
-
     if (cmd == sysAppLaunchCmdNormalLaunch) {
 
         //  Display a string.
